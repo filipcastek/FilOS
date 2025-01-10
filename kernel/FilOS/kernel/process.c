@@ -42,12 +42,12 @@ void schedule() {
     // 1.proces
     for (int i = 0; i < MAX_PROCESSES; i++) {
         if (processes[i].active) {
-            // obnoveni_stavu
+            // obnoveni stavu
             __asm__ (
                 "mov %%esp, %0\n"
                 "mov %%ebp, %1\n"
-                : "=m" (processes[i].esp), "=m" (processes[i].ebp)
                 :
+                : "m" (processes[i].esp), "m" (processes[i].ebp)
             );
             return;
         }
