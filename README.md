@@ -3,8 +3,8 @@
 Specifikace:
 - custom os které jsem dělal do dvou do rána 
 - podporuje 16mb ram
-- používá gcc
+- používá gcc a grub(bootloader)
 
-Vtiposrandy:
-- možná nefunkční 
+fakta:
+- možná(urcite) nefunkční 
 - shoří mi pocitac🙏
